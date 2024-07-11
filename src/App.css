@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.card {
+  display: flex;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cardMedia {
+  width: 160px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.chip {
+  margin: 5px;
+  background-color: #ffca28;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 16px;
+}
+
+.meal-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+  margin-bottom: 10%;
+  margin-top: 2%;
+}
+
+.meal-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 46%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.meal-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.meal-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.meal-details {
+  margin-top: 12px;
+}
+
+.meal-selection {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.meal-selection input {
+  margin-right: 8px;
+}
+
+.drink-selection {
+  margin-top: 10px;
+}
+
+.drink-selection div {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.drink-selection input {
+  margin-right: 8px;
+}
+
+.selected-meals-summary {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20vh;
+}
+
+.selected-meals-summary .MuiCard-root {
+  margin-top: 20px;
+}
+
+.scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.scroll-button .MuiFab-root {
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.scroll-button .MuiFab-root:hover {
+  background-color: #3f51b5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-button .to-top {
+  transform: rotate(180deg);
+}
+
+.scroll-button .to-bottom {
+  transform: rotate(180deg);
+}
+
+.people-list-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  margin-top: 20vh;
+}
+
+.people-list-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.normal-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-size: 16px;
+}
+
+.selected-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.chip-container {
+  margin-top: 20vh;
+}
+
+@media (max-width: 600px) {
+  .people-list-container {
+    margin-top: 15vh;
+    margin-bottom: 0vh;
+  }
+
+  .chip-container {
+    margin-top: 3vh;
+  }
+
+  .selected-meals-summary {
+    margin-top: -5vh;
+    margin-bottom: 20vh;
+  }
+
+  .scroll-button {
+    bottom: 10vh;
+    right: 20px;
+  }
+}
