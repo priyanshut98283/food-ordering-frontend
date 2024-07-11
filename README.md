@@ -3,40 +3,41 @@
 
 The project is split into two repositories:
 
-# Frontend: food-ordering-frontend
-# Backend: food-ordering-backend
+- `Frontend: food-ordering-frontend`
+- `Backend: food-ordering-backend`
+
 - `How to Setup and Test Locally`
 
 - Clone the Repositories
 
-# git clone <https://github.com/priyanshut98283/food-ordering-frontend>
-# git clone <https://github.com/priyanshut98283/food-ordering-backend>
+- `git clone <https://github.com/priyanshut98283/food-ordering-frontend>`
+- `git clone <https://github.com/priyanshut98283/food-ordering-backend>`
 
 - `Install Dependencies`
 
-# Navigate to each directory and install the dependencies using npm install.
+- Navigate to each directory and install the dependencies using npm install.
 
 - `For Frontend:`
 
-# cd food-ordering-frontend
-# npm install
+- cd food-ordering-frontend
+- npm install
 
 - `For Backend:`
 
-# cd food-ordering-backend
-# npm install
+- cd food-ordering-backend
+- npm install
 
-# Start the Backend Server
+- `Start the Backend Server`
 
 - `Navigate to the backend directory and start the server using Node.js.`
 
-# node server.js
+- node server.js
 
-# Start the Frontend Development Server`
+- `Start the Frontend Development Server`
 
 - `Navigate to the frontend directory and start the development server.`
 
-# npm start
+- npm start
 
 - `Access the Application`
 
