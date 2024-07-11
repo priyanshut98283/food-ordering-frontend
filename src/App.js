@@ -18,7 +18,7 @@ const App = () => {
   useEffect(() => {
     const fetchMeals = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/meals');
+        const response = await axios.get('https://food-ordering-backend-jyiy.onrender.com/api/meals');
         dispatch(setMeals(response.data));
       } catch (error) {
         console.error('Error fetching meals:', error);

@@ -80,8 +80,23 @@ const MealList = () => {
   });
 
   if (mealStatus === "loading") {
-    return <div>Loading...</div>;
+    const loadingStyle = {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '20vh', 
+      backgroundColor: 'cadetblue',
+      color: 'white',
+      fontSize: '24px',
+      fontWeight: 'bold',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      borderRadius: '8px',
+      padding: '20px',
+    };
+  
+    return <div style={loadingStyle}>Loading...</div>;
   }
+  
 
   if (mealStatus === "failed") {
     return <div>{error}</div>;

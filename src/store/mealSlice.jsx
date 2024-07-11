@@ -1,16 +1,15 @@
-// store/mealSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchMeals = createAsyncThunk("meals/fetchMeals", async () => {
-  const response = await axios.get("http://localhost:5000/api/meals");
+  const response = await axios.get("https://food-ordering-backend-jyiy.onrender.com/api/meals");
   return response.data;
 });
 
 export const updateMealSelection = createAsyncThunk(
   "meals/updateMealSelection",
   async ({ mealId, userId, selected }) => {
-    await axios.post("http://localhost:5000/api/updateMealSelection", {
+    await axios.post("https://food-ordering-backend-jyiy.onrender.com/api/updateMealSelection", {
       mealId,
       userId,
       selected,
@@ -22,7 +21,8 @@ export const updateMealSelection = createAsyncThunk(
 export const updateDrinkSelection = createAsyncThunk(
   "meals/updateDrinkSelection",
   async ({ mealId, userId, drinkId, selected }) => {
-    await axios.post("http://localhost:5000/api/updateDrinkSelection", {
+    // await axios.post("http://localhost:5000/api/updateDrinkSelection", {
+       await axios.post("https://food-ordering-backend-jyiy.onrender.com/api/updateDrinkSelection", {
       mealId,
       userId,
       drinkId,
@@ -38,7 +38,7 @@ const mealsSlice = createSlice({
     meals: [],
     status: "idle",
     error: null,
-    userSelections: {}, // Store selections per user
+    userSelections: {},
   },
   reducers: {
     setMeals: (state, action) => {
