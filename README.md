@@ -1,3 +1,49 @@
+# Documentation for Food Ordering Application
+- `Repository Structure`
+
+The project is split into two repositories:
+
+# Frontend: food-ordering-frontend
+# Backend: food-ordering-backend
+- `How to Setup and Test Locally`
+
+- Clone the Repositories
+
+# git clone <https://github.com/priyanshut98283/food-ordering-frontend>
+# git clone <https://github.com/priyanshut98283/food-ordering-backend>
+
+- `Install Dependencies`
+
+# Navigate to each directory and install the dependencies using npm install.
+
+- `For Frontend:`
+
+# cd food-ordering-frontend
+# npm install
+
+- `For Backend:`
+
+# cd food-ordering-backend
+# npm install
+
+# Start the Backend Server
+
+- `Navigate to the backend directory and start the server using Node.js.`
+
+# node server.js
+
+# Start the Frontend Development Server`
+
+- `Navigate to the frontend directory and start the development server.`
+
+# npm start
+
+- `Access the Application`
+
+`Open your browser and navigate to http://localhost:3000 to see the application running locally.`
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
